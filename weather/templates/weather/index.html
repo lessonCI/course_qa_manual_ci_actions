@@ -74,7 +74,8 @@
             if (response.ok) {
                 result.innerHTML = `
                     <h2>${data.city}</h2>
-                    <p>Temperature: ${data.temperature}°C</p>
+                    <p>Температура: ${data.temperature}°C</p>
+                    <p>Влажность: ${data.humidity}%</p>  <!-- Новое поле -->
                     <p>Description: ${data.description}</p>
                 `;
             } else {
