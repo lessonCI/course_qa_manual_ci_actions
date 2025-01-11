@@ -2,7 +2,7 @@ import requests
 from django.http import JsonResponse
 from django.shortcuts import render
 
-API_KEY = '04e7ba7baa7955962bd50aad12bd4aff'
+API_KEY = '8f6ba62500711817d43c3cd4012e4cca'
 
 def get_weather(request):
     city = request.GET.get('city', 'Moscow')
