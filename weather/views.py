@@ -13,7 +13,6 @@ def get_weather(request):
         weather_info = {
             'city': data['name'],
             'temperature': data['main']['temp'],
-            'humidity': data['main']['humidity'],  # Новое поле
             'description': data['weather'][0]['description'],
         }
         return JsonResponse(weather_info)
